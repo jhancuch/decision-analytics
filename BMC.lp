@@ -1,5 +1,5 @@
 \* problem *\
-Maximize
+Minimize
 OBJ: 45 JacksonvilleAtlanta + 85 JacksonvilleColumbus + 50 JacksonvilleMobile
  + 50 JacksonvilleRichmond + 115 NewarkAtlanta + 30 NewarkBoston
  + 80 NewarkColumbus + 150 NewarkMobile + 40 NewarkRichmond

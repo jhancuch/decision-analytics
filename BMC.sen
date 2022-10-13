@@ -1,72 +1,72 @@
 GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
 
 Problem:    
-Objective:  OBJ = 32350 (MAXimum)
+Objective:  OBJ = 22350 (MINimum)
 
    No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
                                           Marginal   Upper bound          range         range   break point variable
 ------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
-     1 _C1          NU     200.00000        .               -Inf      180.00000     -70.00000   30950.00000 _C2
-                                          70.00000     200.00000      340.00000          +Inf   42150.00000 JacksonvilleAtlanta
+     1 _C1          NU     200.00000        .               -Inf      180.00000          -Inf   22450.00000 _C2
+                                          -5.00000     200.00000      240.00000       5.00000   22150.00000 JacksonvilleColumbus
 
-     2 _C2          BS     280.00000      20.00000          -Inf      280.00000          -Inf          -Inf
-                                            .          300.00000      310.00000      70.00000   51950.00000 _C1
+     2 _C2          BS     280.00000      20.00000          -Inf      300.00000      -5.00000   20950.00000 _C1
+                                            .          300.00000      280.00000          +Inf          +Inf
 
-     3 _C3          NS     100.00000        .          100.00000         .               -Inf   36350.00000 NewarkBoston
-                                         -40.00000     100.00000      120.00000          +Inf   31550.00000 _C2
+     3 _C3          NS     100.00000        .          100.00000       60.00000          -Inf   20950.00000 JacksonvilleColumbus
+                                          35.00000     100.00000      120.00000          +Inf   23050.00000 _C2
 
-     4 _C4          NS      60.00000        .           60.00000         .               -Inf   27250.00000 JacksonvilleColumbus
-                                          85.00000      60.00000       80.00000          +Inf   34050.00000 _C2
+     4 _C4          NS      60.00000        .           60.00000       20.00000          -Inf   18950.00000 JacksonvilleColumbus
+                                          85.00000      60.00000       80.00000          +Inf   24050.00000 _C2
 
-     5 _C5          NS     170.00000        .          170.00000       30.00000          -Inf   26050.00000 JacksonvilleAtlanta
-                                          45.00000     170.00000      190.00000          +Inf   33250.00000 _C2
+     5 _C5          NS     170.00000        .          170.00000         .               -Inf   14700.00000 JacksonvilleAtlanta
+                                          45.00000     170.00000      190.00000          +Inf   23250.00000 _C2
 
-     6 _C6          NS      80.00000        .           80.00000         .               -Inf   28350.00000 JacksonvilleRichmond
-                                          50.00000      80.00000      100.00000          +Inf   33350.00000 _C2
+     6 _C6          NS      80.00000        .           80.00000       40.00000          -Inf   20550.00000 JacksonvilleColumbus
+                                          45.00000      80.00000      100.00000          +Inf   23250.00000 _C2
 
-     7 _C7          NS      70.00000        .           70.00000         .               -Inf   26750.00000 NewarkMobile
-                                          80.00000      70.00000       90.00000          +Inf   33950.00000 _C2
+     7 _C7          NS      70.00000        .           70.00000         .               -Inf   18850.00000 JacksonvilleMobile
+                                          50.00000      70.00000       90.00000          +Inf   23350.00000 _C2
 
 GLPK 5.0  - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
 
 Problem:    
-Objective:  OBJ = 32350 (MAXimum)
+Objective:  OBJ = 22350 (MINimum)
 
    No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
                                           Marginal   Upper bound          range         range   break point variable
 ------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
      1 JacksonvilleAtlanta
-                    BS     140.00000      45.00000        .            70.00000      15.00000   28150.00000 JacksonvilleMobile
-                                            .               +Inf      160.00000     115.00000   42150.00000 _C1
+                    BS     170.00000      45.00000        .           170.00000          -Inf          -Inf
+                                            .               +Inf      150.00000     120.00000   35100.00000 NewarkAtlanta
 
      2 JacksonvilleColumbus
-                    BS      60.00000      85.00000        .            30.00000      10.00000   27850.00000 NewarkColumbus
-                                            .               +Inf       60.00000          +Inf          +Inf
+                    BS      40.00000      85.00000        .            60.00000      80.00000   22150.00000 _C1
+                                            .               +Inf      -40.00000      90.00000   22550.00000 JacksonvilleRichmond
 
      3 JacksonvilleMobile
-                    NL        .           50.00000        .           -30.00000          -Inf   33250.00000 NewarkAtlanta
-                                         -30.00000          +Inf       70.00000      80.00000   30250.00000 NewarkMobile
+                    BS      70.00000      50.00000        .            70.00000          -Inf          -Inf
+                                            .               +Inf       50.00000     155.00000   29700.00000 NewarkMobile
 
      4 JacksonvilleRichmond
-                    BS      80.00000      50.00000        .            50.00000     -30.00000   25950.00000 NewarkRichmond
-                                            .               +Inf       80.00000          +Inf          +Inf
+                    NL        .           50.00000        .           -20.00000      45.00000   22250.00000 NewarkColumbus
+                                           5.00000          +Inf       40.00000          +Inf   22550.00000 JacksonvilleColumbus
 
      5 NewarkAtlanta
-                    BS      30.00000     115.00000        .            10.00000      45.00000   30250.00000 _C1
-                                            .               +Inf      100.00000     145.00000   33250.00000 JacksonvilleMobile
+                    NL        .          115.00000        .           -40.00000      40.00000   19350.00000 JacksonvilleColumbus
+                                          75.00000          +Inf       20.00000          +Inf   23850.00000 NewarkColumbus
 
      6 NewarkBoston BS     100.00000      30.00000        .           100.00000          -Inf          -Inf
                                             .               +Inf      100.00000          +Inf          +Inf
 
      7 NewarkColumbus
-                    NL        .           80.00000        .          -140.00000          -Inf   42850.00000 JacksonvilleAtlanta
-                                         -75.00000          +Inf       30.00000     155.00000   30100.00000 NewarkAtlanta
+                    BS      20.00000      80.00000        .            60.00000      75.00000   22250.00000 JacksonvilleRichmond
+                                            .               +Inf         .           85.00000   22450.00000 _C1
 
-     8 NewarkMobile BS      70.00000     150.00000        .           -70.00000     120.00000   30250.00000 JacksonvilleMobile
-                                            .               +Inf       70.00000          +Inf          +Inf
+     8 NewarkMobile NL        .          150.00000        .           -40.00000      45.00000   18150.00000 JacksonvilleColumbus
+                                         105.00000          +Inf       20.00000          +Inf   24450.00000 NewarkColumbus
 
      9 NewarkRichmond
-                    NL        .           40.00000        .          -140.00000          -Inf   43550.00000 JacksonvilleAtlanta
-                                         -80.00000          +Inf       30.00000     120.00000   29950.00000 NewarkAtlanta
+                    BS      80.00000      40.00000        .            80.00000          -Inf          -Inf
+                                            .               +Inf       40.00000      45.00000   22750.00000 JacksonvilleRichmond
 
 End of report
